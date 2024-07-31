@@ -102,7 +102,7 @@ export default function Post() {
               alt={post.title}
               className="mb-8 w-full max-h-lg mx-auto rounded-xl"
             />
-            <div className="prose max-w-none w-full text-center text-lg">
+            <div className="prose max-w-none w-full text-center text-xl">
               <div className="browser-css">{parse(post.content)}</div>
             </div>
           </div>
