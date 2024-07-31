@@ -39,7 +39,7 @@ export default function Post() {
             <h1 className="text-4xl font-bold text-gray-100 mb-2">
               {post.title}
             </h1>
-            <p className="text-gray-400">Published on April 4, 2023</p>
+            <p className="text-gray-400">Published on {userData?.$createdAt.slice(0,10) || "15 Aug 1947" }</p>
           </div>
           <div className="w-auto">
             {isAuthor && (
