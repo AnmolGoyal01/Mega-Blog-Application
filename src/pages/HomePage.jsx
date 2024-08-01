@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { PostCard } from "../components";
 import appwriteService from "../appwrite/config";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
   const authStatus = useSelector((state) => state.auth.status);
@@ -36,7 +37,8 @@ export default function HomePage() {
     )
   ) : (
     <div className=" w-full flex justify-center">
-      <div className="p-10 text-3xl text-white">Login to read posts</div>
+      <div className="p-10 text-3xl text-white">
+        <Link to='/login' className="hover:underline hover:text-gray-200"> Login </Link> to read posts</div>
     </div>
   );
 }

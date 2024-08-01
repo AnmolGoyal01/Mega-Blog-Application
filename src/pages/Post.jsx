@@ -39,7 +39,9 @@ export default function Post() {
             <h1 className="text-4xl font-bold text-gray-100 mb-2">
               {post.title}
             </h1>
-            <p className="text-gray-400">Published on {userData?.$createdAt.slice(0,10) || "15 Aug 1947" }</p>
+            <p className="text-gray-400">
+              Published on {userData?.$createdAt.slice(0, 10) || "1 Aug, 2024"}
+            </p>
           </div>
           <div className="w-auto">
             {isAuthor && (
@@ -102,7 +104,7 @@ export default function Post() {
               alt={post.title}
               className="mb-8 w-full max-h-lg mx-auto rounded-xl"
             />
-            <div className="prose max-w-none w-full text-center text-xl">
+            <div className="prose max-w-none w-full text-xl">
               <div className="browser-css">{parse(post.content)}</div>
             </div>
           </div>
