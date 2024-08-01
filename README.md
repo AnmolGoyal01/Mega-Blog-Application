@@ -107,7 +107,4 @@ Please fork the repository and create a pull request with your changes.
 - **GitHub:** [Anmolgoyal01](https://github.com/anmolgoyal01)
 - **Email:** anmolgoyaldtu@gmail.com
 
-## Demo
-
-Insert gif or link to demo
 
